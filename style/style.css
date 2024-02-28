@@ -142,3 +142,14 @@ main {
   display: none;
   visibility: hidden;
 }
+
+.button-container {
+  justify-content: center;
+  margin-top: 20px;
+}
+main .button-container button {
+  background: #25d976;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 12px;
+}
