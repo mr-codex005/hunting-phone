@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunting Phone</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="flex">
+      <section class="logo">
+        <h2>Hunting Phone</h2>
+      </section>
+      <section class="menu-bar">
+        <ul class="flex">
+          <li><a href="#">about</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">products</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <section id="search-container">
+      <!-- this is search section  -->
+      <input type="text" name="" id="search-box" placeholder="search here">
+      <button onclick="clickOnSearchHandler()" id="search-btn">Search</button>
+    </section>
+  </header>
+  <main>
+    <!-- loader -->
+    <div class="loader-container hidden">
+      <div class="loader">
+        <div class="loading"> </div>
+      </div>
+    </div>
+    <!-- here display all phones -->
+    <div class="phones flex">
+    </div>
+    <div class="button-container">
+      <button>Show all</button>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="./script/api.js"></script>
+</body>
+
+</html>

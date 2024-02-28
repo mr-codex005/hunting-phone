@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+header {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+header nav {
+  justify-content: space-between;
+  background-color: #bafafa;
+  padding: 15px 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+header h2 {
+  color: #25d976;
+  font-size: 2rem;
+}
+header ul {
+  list-style: none;
+  gap: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #25d976;
+}
+header ul li a:hover {
+  text-decoration: underline;
+  font-size: 102%;
+}
+
+/* search section here */
+#search-container {
+  background: #bcfee8;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+#search-box {
+  border: none;
+  outline: none;
+  padding: 3px;
+  width: 40%;
+  border-radius: 10px;
+}
+#search-btn {
+  background: rgb(8, 238, 161);
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #6b6767;
+}
+#search-btn:hover {
+  background: rgb(5, 161, 109);
+  scale: 102%;
+}
+
+/* display phone section here  */
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.phones {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.phone {
+  width: 32.5%;
+  background: #bdfcd9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 12px;
+}
+.phone img {
+  width: 50%;
+  border-radius: 20px;
+}
+.phone .detail {
+  background: #a3f7c9;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  border: 2px solid #eef4f0;
+  border-radius: 12px;
+}
+
+/* loader section */
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #0000003c;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  border: 2px solid gray;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  animation: anim 0.5s infinite;
+}
+@keyframes anim {
+  from {
+    background-color: #7adaba;
+    border: 3px solid red;
+  }
+  to {
+    background-color: #c7f6f6;
+    border: 3px solid green;
+  }
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
