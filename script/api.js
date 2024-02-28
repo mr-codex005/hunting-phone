@@ -6,9 +6,13 @@ const loadData = async (searchText) => {
   displayPhone(data.data);
 };
 const loader = document.querySelector(".loader-container");
-
+const buttonContainer = document.querySelector(".button-container");
 const displayPhone = (phones) => {
-  console.log(phones.length)
+  if (phones.length > 15) {
+    buttonContainer.classList.remove("hidden");
+  }else{
+    buttonContainer.classList.add("hidden")
+  }
   const phonesContainer = document.querySelector(".phones");
   phonesContainer.innerHTML = "";
   phones.forEach((phone) => {
